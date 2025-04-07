@@ -4,7 +4,7 @@ import requests
 st.markdown("""
     <style>
         body {
-            background-color: #E3F2FD;
+            background-color: #f4f4f4;
             color: #1c1c1c;
             font-family: 'Arial', sans-serif;
         }
@@ -40,7 +40,7 @@ st.markdown("""
         }
 
         .card {
-            background-color: #ffffff;
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
