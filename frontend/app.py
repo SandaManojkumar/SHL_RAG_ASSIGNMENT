@@ -92,7 +92,7 @@ st.markdown("""
 # Add a title with color psychology in mind
 st.markdown('<div class="title">SHL Assessment Recommender</div>', unsafe_allow_html=True)
 
-FASTAPI_URL = "https://shl-rag-assignment.onrender.com/"  # your deployed backend
+FASTAPI_URL = "https://shl-rag-assignment-nt82.onrender.com"  # your deployed backend
 
 if st.button("🔄 Update Assessment Data", key="update", help="Click to refresh the data from the backend", use_container_width=True):
     with st.spinner("Updating data..."):
