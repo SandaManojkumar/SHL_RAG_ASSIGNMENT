@@ -1,56 +1,50 @@
-SHL-RAG-Assignment
-SHL Assessment Intelligence Scraper 🔍
-This project is a smart web scraping and analysis pipeline designed to extract and structure data from SHL’s public assessment catalog. It aims to assist HR professionals, researchers, and AI developers in accessing detailed assessment information to enable more effective candidate evaluation and job screening.
+# SHL-RAG-assignment
+# SHL Assessment Intelligence Scraper 🔍
 
-🔧 Project Overview
-SHL provides a comprehensive catalog of psychometric and job-related assessments via their product catalog. However, this data isn’t readily available in a structured format. This tool addresses that gap by:
+This project provides a smart web scraping and analysis pipeline to extract and analyze SHL's public assessment catalog. It is built to help HR teams, researchers, or AI developers gain structured access to detailed assessment data for smarter job screening and candidate evaluation.
 
-Crawling all pages of the catalog with pagination support
+## 🔧 Project Overview
 
-Visiting each individual assessment page
+SHL offers a wide range of psychometric and job-related assessments through their [product catalog](https://www.shl.com/solutions/products/product-catalog/). However, this data is not directly available in structured format. This tool:
 
-Extracting key details, including:
+- Crawls all product pages with pagination.
+- Visits each individual assessment page.
+- Extracts key information such as:
+  - Assessment name
+  - Description
+  - Approximate completion time
+  - Remote testing availability
+  - Adaptive testing support
+  - Direct URL
+- Uses [Cohere](https://cohere.com/) to generate semantic embeddings of descriptions.
+- Indexes the data using [FAISS](https://github.com/facebookresearch/faiss) for fast similarity search.
 
-Assessment name
+---
 
-Description
+## 🧠 Use Case
 
-Estimated completion time
+This scraper serves as the data backbone for Gen AI applications such as:
 
-Remote testing availability
+- Enhanced job-candidate matching
+- Personalized assessment recommendations
+- HR analytics dashboards
+- Assessment similarity search using natural language
 
-Adaptive testing support
+---
+## Deployed at:
 
-Direct URL
 
-Additionally, it leverages Cohere to generate semantic embeddings from descriptions and uses FAISS to enable efficient similarity searches.
+---
+## Tech Stack
 
-🧠 Use Cases
-This scraper serves as a foundational data layer for GenAI applications such as:
+Selenium – Automated web scraping
+BeautifulSoup – HTML parsing
+Cohere API – Language embedding
+FAISS – Efficient vector similarity search
+JSON – Structured output
 
-Smarter job-candidate matching
+---
 
-Tailored assessment recommendations
-
-Interactive HR analytics dashboards
-
-Natural language-based assessment similarity search
-
-🚀 Deployment
-Deployed at: (deployment link or details to be added)
-
-🛠️ Tech Stack
-Selenium – For automated web crawling
-
-BeautifulSoup – For HTML parsing
-
-Cohere API – To generate text embeddings
-
-FAISS – For fast vector-based similarity search
-
-JSON – For clean, structured data output
-
-📬 Contact
-Interested in collaborating or learning more?
-Feel free to connect on LinkedIn or open an issue in the repository.
-
+## 📬 Contact
+Feel free to reach out via LinkedIn or open an issue if you'd like to collaborate!
+https://www.linkedin.com/in/nagaram-kridey-34230b296/
