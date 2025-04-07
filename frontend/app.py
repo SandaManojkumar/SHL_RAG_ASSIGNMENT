@@ -4,89 +4,95 @@ import requests
 st.markdown("""
     <style>
         body {
-            background-color: #E3F2FD;
-            color: #1c1c1c;
-            font-family: 'Arial', sans-serif;
+            background-color: #F3F0FF;
+            color: #2C2C54;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         .title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #1A237E;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #5A4BFF;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .button {
-            background-color: white;
-            color: #1565C0;
-            padding: 12px 24px;
-            border: 2px solid #1565C0;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            background: rgba(255, 255, 255, 0.7);
+            border: 2px solid #5A4BFF;
+            color: #5A4BFF;
+            padding: 12px 26px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
             text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
         }
 
         .button:hover {
-            background-color: #1565C0;
+            background: #5A4BFF;
             color: white;
         }
 
         .button-update {
-            background-color: #2E7D32;
+            background: #00C9A7;
+            color: white;
+            border: none;
         }
 
         .button-update:hover {
-            background-color: #1B5E20;
+            background: #00B896;
         }
 
         .card {
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-            border-left: 6px solid #1565C0;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+            padding: 24px;
+            border-left: 6px solid #6C63FF;
             transition: transform 0.3s ease-in-out;
         }
 
         .card:hover {
-            transform: scale(1.03);
+            transform: translateY(-5px);
         }
 
         .card-header {
             font-size: 1.5rem;
-            font-weight: bold;
-            color: #0D47A1;
+            font-weight: 600;
+            color: #403B91;
         }
 
         .card-body {
-            margin-top: 10px;
-            color: #333;
+            margin-top: 12px;
+            color: #4D4D66;
+            line-height: 1.6;
         }
 
         .card-footer {
             text-align: right;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .spinner {
             font-size: 1.5rem;
-            color: #1565C0;
+            color: #6C63FF;
         }
 
         .warning-text {
-            color: #C62828;
+            color: #FF6B6B;
             font-weight: bold;
         }
 
         .success-text {
-            color: #2E7D32;
+            color: #00C9A7;
         }
 
         .highlight {
-            color: #EF6C00;
+            color: #FFA726;
             font-weight: bold;
         }
     </style>
