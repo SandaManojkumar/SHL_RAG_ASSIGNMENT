@@ -4,64 +4,67 @@ import requests
 st.markdown("""
     <style>
         body {
-            background-color: #E3F2FD;
-            color: #1c1c1c;
-            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         .title {
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             font-weight: bold;
-            color: #1A237E;
+            color: #00e6e6;
             text-align: center;
             margin-bottom: 30px;
         }
 
         .button {
-            background-color: #1565C0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
             color: white;
             padding: 12px 24px;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 1.1rem;
-            transition: background-color 0.3s ease;
+            border: none;
+            transition: all 0.3s ease;
             text-decoration: none;
         }
 
         .button:hover {
-            background-color: #0D47A1;
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            transform: scale(1.03);
         }
 
         .button-update {
-            background-color: #2E7D32;
+            background: linear-gradient(to right, #00c853, #64dd17);
         }
 
         .button-update:hover {
-            background-color: #1B5E20;
+            background: linear-gradient(to right, #64dd17, #00c853);
         }
 
         .card {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
             padding: 20px;
-            border-left: 6px solid #1565C0;
+            border-left: 6px solid #00e6e6;
+            backdrop-filter: blur(10px);
             transition: transform 0.3s ease-in-out;
         }
 
         .card:hover {
-            transform: scale(1.03);
+            transform: scale(1.02);
         }
 
         .card-header {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #0D47A1;
+            color: #00e6e6;
         }
 
         .card-body {
             margin-top: 10px;
-            color: #333;
+            color: #ddd;
         }
 
         .card-footer {
@@ -71,20 +74,20 @@ st.markdown("""
 
         .spinner {
             font-size: 1.5rem;
-            color: #1565C0;
+            color: #00e6e6;
         }
 
         .warning-text {
-            color: #C62828;
+            color: #ff5252;
             font-weight: bold;
         }
 
         .success-text {
-            color: #2E7D32;
+            color: #00e676;
         }
 
         .highlight {
-            color: #EF6C00;
+            color: #ffb300;
             font-weight: bold;
         }
     </style>
