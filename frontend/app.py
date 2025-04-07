@@ -4,7 +4,7 @@ import requests
 st.markdown("""
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: #E3F2FD;
             color: #1c1c1c;
             font-family: 'Arial', sans-serif;
         }
@@ -18,17 +18,19 @@ st.markdown("""
         }
 
         .button {
-            background-color: #1565C0;
-            color: white;
+            background-color: white;
+            color: #1565C0;
             padding: 12px 24px;
+            border: 2px solid #1565C0;
             border-radius: 8px;
             font-size: 1.1rem;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
             text-decoration: none;
         }
 
         .button:hover {
-            background-color: #0D47A1;
+            background-color: #1565C0;
+            color: white;
         }
 
         .button-update {
@@ -40,7 +42,7 @@ st.markdown("""
         }
 
         .card {
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
