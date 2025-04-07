@@ -19,7 +19,7 @@ st.markdown("""
 
         .button {
             background: linear-gradient(to right, #00c6ff, #0072ff);
-            color: white;
+            color: black;
             padding: 12px 24px;
             border-radius: 10px;
             font-size: 1.1rem;
