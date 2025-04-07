@@ -32,7 +32,7 @@ This scraper serves as the data backbone for Gen AI applications such as:
 
 ---
 ## Deployed at:
-
+https://sandamanojkumarshlrag.streamlit.app/
 
 ---
 ## Tech Stack
