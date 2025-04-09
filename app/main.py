@@ -36,3 +36,8 @@ def update_data():
         return {"message": "Data updated successfully!"}
     except Exception as e:
         return {"error": str(e)}
+
+
+@app.get("/health")
+def healthcheckup():
+    return {"status": "healthy"}
